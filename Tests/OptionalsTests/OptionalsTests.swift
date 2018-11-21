@@ -11,7 +11,7 @@ final class OptionalsTests: XCTestCase {
         XCTAssertFalse(some.isNone)
         XCTAssertTrue(some.isSome)
         
-        print(none.or({ _ in 14 }))
+        print(none.or(else: { 14 }))
     }
 
     static var allTests = [
